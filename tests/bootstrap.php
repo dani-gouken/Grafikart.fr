@@ -9,7 +9,7 @@ require dirname(__DIR__).'/vendor/autoload.php';
 // On charge la configuration de symfony
 require dirname(__DIR__).'/config/bootstrap.php';
 
-// On crée le base de données
+// On crée la base de données
 $kernel = new \App\Kernel('test', true);
 $kernel->boot();
 $application = new Application($kernel);
